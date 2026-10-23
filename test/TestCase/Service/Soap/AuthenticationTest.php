@@ -18,7 +18,7 @@ use Dhl\Sdk\Paket\Bcs\Soap\SoapServiceFactory;
 use Dhl\Sdk\Paket\Bcs\Test\Expectation\CommunicationExpectation;
 use Dhl\Sdk\Paket\Bcs\Test\Provider\Soap\Service\AuthenticationTestProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class AuthenticationTest extends AbstractApiTest
 {

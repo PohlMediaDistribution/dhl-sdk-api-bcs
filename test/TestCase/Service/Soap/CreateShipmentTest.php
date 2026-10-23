@@ -22,7 +22,7 @@ use Dhl\Sdk\Paket\Bcs\Test\Expectation\RequestTypeExpectation;
 use Dhl\Sdk\Paket\Bcs\Test\Expectation\ShipmentServiceTestExpectation as Expectation;
 use Dhl\Sdk\Paket\Bcs\Test\Provider\Soap\Service\CreateShipmentTestProvider;
 use Dhl\Sdk\Paket\Bcs\Test\Provider\Soap\Service\ErrorProvider;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class CreateShipmentTest extends AbstractApiTest
 {

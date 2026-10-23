@@ -22,7 +22,7 @@ use Dhl\Sdk\Paket\Bcs\Test\Provider\Soap\Service\ValidateShipmentTestProvider;
 use Dhl\Sdk\Paket\Bcs\Test\SoapClientFake;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class ValidateShipmentTest extends TestCase
 {

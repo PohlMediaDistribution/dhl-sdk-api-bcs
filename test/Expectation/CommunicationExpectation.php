@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace Dhl\Sdk\Paket\Bcs\Test\Expectation;
 
 use PHPUnit\Framework\Assert;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class CommunicationExpectation
 {

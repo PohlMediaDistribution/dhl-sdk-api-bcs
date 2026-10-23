@@ -19,7 +19,7 @@ use Dhl\Sdk\Paket\Bcs\Test\Provider\Http\Service\CancelShipmentTestProvider;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class CancelShipmentTest extends TestCase
 {

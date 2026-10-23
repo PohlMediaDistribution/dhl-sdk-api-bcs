@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.2.1
+
+### Changed
+
+- Allow `league/openapi-psr7-validator` 0.22 to 0.24 (in addition to 0.21) and `psr/http-message` 2.0
+  (in addition to 1.x). This makes the SDK installable together with Laravel 11.35 and newer,
+  which require `league/uri` 7.
+- Tests: use `colinodell/psr-testlogger` instead of `Psr\Log\Test\TestLogger`, which was removed from `psr/log` 2.x.
+
 ## 2.2.0
 
 ### Added

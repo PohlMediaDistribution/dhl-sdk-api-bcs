@@ -15,7 +15,7 @@ use Dhl\Sdk\Paket\Bcs\Test\Provider\Http\Service\GetVersionTestProvider;
 use Http\Discovery\Psr17FactoryDiscovery;
 use Http\Mock\Client;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class GetVersionTest extends TestCase
 {

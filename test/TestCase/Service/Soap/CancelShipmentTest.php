@@ -16,7 +16,7 @@ use Dhl\Sdk\Paket\Bcs\Soap\SoapServiceFactory;
 use Dhl\Sdk\Paket\Bcs\Test\Expectation\CommunicationExpectation;
 use Dhl\Sdk\Paket\Bcs\Test\Expectation\ShipmentServiceTestExpectation as Expectation;
 use Dhl\Sdk\Paket\Bcs\Test\Provider\Soap\Service\CancelShipmentTestProvider;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 class CancelShipmentTest extends AbstractApiTest
 {
