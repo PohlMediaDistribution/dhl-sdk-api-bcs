@@ -17,7 +17,7 @@ class SoapClientFake extends \SoapClient
      * @param mixed[]|null $options
      * @throws \SoapFault
      */
-    public function __construct($wsdl, array $options = null)
+    public function __construct($wsdl, ?array $options = null)
     {
         $wsdl = __DIR__ . '/Provider/_files/bcs-3.3.2/geschaeftskundenversand-api-3.3.2.wsdl';
         parent::__construct($wsdl, $options);

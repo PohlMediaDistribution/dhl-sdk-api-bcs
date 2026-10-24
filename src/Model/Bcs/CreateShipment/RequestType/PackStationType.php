@@ -64,7 +64,7 @@ class PackStationType
      * @param string|null $province
      * @return PackStationType
      */
-    public function setProvince(string $province = null): self
+    public function setProvince(?string $province = null): self
     {
         $this->province = $province;
         return $this;
@@ -74,7 +74,7 @@ class PackStationType
      * @param CountryType|null $Origin
      * @return PackStationType
      */
-    public function setOrigin(CountryType $Origin = null): self
+    public function setOrigin(?CountryType $Origin = null): self
     {
         $this->Origin = $Origin;
         return $this;

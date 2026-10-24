@@ -35,7 +35,7 @@ class CommunicationType
      * @param string|null $phone
      * @return CommunicationType
      */
-    public function setPhone(string $phone = null): self
+    public function setPhone(?string $phone = null): self
     {
         $this->phone = $phone;
         return $this;
@@ -45,7 +45,7 @@ class CommunicationType
      * @param string|null $email
      * @return CommunicationType
      */
-    public function setEmail(string $email = null): self
+    public function setEmail(?string $email = null): self
     {
         $this->email = $email;
         return $this;
@@ -55,7 +55,7 @@ class CommunicationType
      * @param string|null $contactPerson
      * @return CommunicationType
      */
-    public function setContactPerson(string $contactPerson = null): self
+    public function setContactPerson(?string $contactPerson = null): self
     {
         $this->contactPerson = $contactPerson;
         return $this;

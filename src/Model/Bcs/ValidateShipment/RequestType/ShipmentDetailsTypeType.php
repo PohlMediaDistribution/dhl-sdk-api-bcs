@@ -53,7 +53,7 @@ class ShipmentDetailsTypeType extends ShipmentDetailsType
      * @param ShipmentService|null $service
      * @return ShipmentDetailsTypeType
      */
-    public function setService(ShipmentService $service = null): self
+    public function setService(?ShipmentService $service = null): self
     {
         $this->Service = $service;
         return $this;
@@ -63,7 +63,7 @@ class ShipmentDetailsTypeType extends ShipmentDetailsType
      * @param ShipmentNotificationType|null $notification
      * @return ShipmentDetailsTypeType
      */
-    public function setNotification(ShipmentNotificationType $notification = null): self
+    public function setNotification(?ShipmentNotificationType $notification = null): self
     {
         $this->Notification = $notification;
         return $this;
@@ -73,7 +73,7 @@ class ShipmentDetailsTypeType extends ShipmentDetailsType
      * @param BankType|null $BankData
      * @return ShipmentDetailsTypeType
      */
-    public function setBankData(BankType $BankData = null): self
+    public function setBankData(?BankType $BankData = null): self
     {
         $this->BankData = $BankData;
         return $this;

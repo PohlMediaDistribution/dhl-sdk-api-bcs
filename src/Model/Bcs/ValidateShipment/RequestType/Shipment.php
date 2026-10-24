@@ -60,7 +60,7 @@ class Shipment
     public function __construct(
         ShipmentDetailsTypeType $shipmentDetails,
         ReceiverType $receiver,
-        ShipperType $shipper = null
+        ?ShipperType $shipper = null
     ) {
         $this->ShipmentDetails = $shipmentDetails;
         $this->Receiver = $receiver;
@@ -71,7 +71,7 @@ class Shipment
      * @param ShipperType|null $returnReceiver
      * @return Shipment
      */
-    public function setReturnReceiver(ShipperType $returnReceiver = null): self
+    public function setReturnReceiver(?ShipperType $returnReceiver = null): self
     {
         $this->ReturnReceiver = $returnReceiver;
         return $this;
@@ -81,7 +81,7 @@ class Shipment
      * @param ExportDocumentType|null $exportDocument
      * @return Shipment
      */
-    public function setExportDocument(ExportDocumentType $exportDocument = null): self
+    public function setExportDocument(?ExportDocumentType $exportDocument = null): self
     {
         $this->ExportDocument = $exportDocument;
         return $this;
@@ -91,7 +91,7 @@ class Shipment
      * @param string|null $shipperReference
      * @return Shipment
      */
-    public function setShipperReference(string $shipperReference = null): self
+    public function setShipperReference(?string $shipperReference = null): self
     {
         $this->ShipperReference = $shipperReference;
         return $this;

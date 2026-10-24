@@ -70,7 +70,7 @@ class ShipmentDetailsType
      * @param string|null $customerReference
      * @return ShipmentDetailsType
      */
-    public function setCustomerReference(string $customerReference = null): self
+    public function setCustomerReference(?string $customerReference = null): self
     {
         $this->customerReference = $customerReference;
         return $this;
@@ -80,7 +80,7 @@ class ShipmentDetailsType
      * @param string|null $costCentre
      * @return ShipmentDetailsType
      */
-    public function setCostCentre(string $costCentre = null): self
+    public function setCostCentre(?string $costCentre = null): self
     {
         $this->costCentre = $costCentre;
         return $this;
@@ -90,7 +90,7 @@ class ShipmentDetailsType
      * @param string|null $returnShipmentAccountNumber
      * @return ShipmentDetailsType
      */
-    public function setReturnShipmentAccountNumber(string $returnShipmentAccountNumber = null): self
+    public function setReturnShipmentAccountNumber(?string $returnShipmentAccountNumber = null): self
     {
         $this->returnShipmentAccountNumber = $returnShipmentAccountNumber;
         return $this;
@@ -100,7 +100,7 @@ class ShipmentDetailsType
      * @param string|null $returnShipmentReference
      * @return ShipmentDetailsType
      */
-    public function setReturnShipmentReference(string $returnShipmentReference = null): self
+    public function setReturnShipmentReference(?string $returnShipmentReference = null): self
     {
         $this->returnShipmentReference = $returnShipmentReference;
         return $this;

@@ -50,7 +50,7 @@ class PostfilialeType
      * @param string|null $postNumber
      * @return PostfilialeType
      */
-    public function setPostNumber(string $postNumber = null): self
+    public function setPostNumber(?string $postNumber = null): self
     {
         $this->postNumber = $postNumber;
         return $this;
@@ -60,7 +60,7 @@ class PostfilialeType
      * @param CountryType|null $Origin
      * @return PostfilialeType
      */
-    public function setOrigin(CountryType $Origin = null): self
+    public function setOrigin(?CountryType $Origin = null): self
     {
         $this->Origin = $Origin;
         return $this;

@@ -17,7 +17,7 @@ class ReceiverType extends ReceiverTypeType
      */
     public function __construct(
         string $name1,
-        ReceiverNativeAddressType $address = null
+        ?ReceiverNativeAddressType $address = null
     ) {
         parent::__construct($name1, $address);
     }

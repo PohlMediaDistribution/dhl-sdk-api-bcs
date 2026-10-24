@@ -61,7 +61,7 @@ interface ShipmentOrderRequestBuilderInterface
      */
     public function setShipperAccount(
         string $billingNumber,
-        string $returnBillingNumber = null
+        ?string $returnBillingNumber = null
     ): ShipmentOrderRequestBuilderInterface;
 
     /**
@@ -94,13 +94,13 @@ interface ShipmentOrderRequestBuilderInterface
         string $city,
         string $streetName,
         string $streetNumber = '',
-        string $name = null,
-        string $nameAddition = null,
-        string $email = null,
-        string $phone = null,
-        string $contactPerson = null,
-        string $state = null,
-        string $dispatchingInformation = null,
+        ?string $name = null,
+        ?string $nameAddition = null,
+        ?string $email = null,
+        ?string $phone = null,
+        ?string $contactPerson = null,
+        ?string $state = null,
+        ?string $dispatchingInformation = null,
         array $addressAddition = []
     ): ShipmentOrderRequestBuilderInterface;
 
@@ -121,11 +121,11 @@ interface ShipmentOrderRequestBuilderInterface
      * @return ShipmentOrderRequestBuilderInterface
      */
     public function setShipperBankData(
-        string $accountOwner = null,
-        string $bankName = null,
-        string $iban = null,
-        string $bic = null,
-        string $accountReference = null,
+        ?string $accountOwner = null,
+        ?string $bankName = null,
+        ?string $iban = null,
+        ?string $bic = null,
+        ?string $accountReference = null,
         array $notes = []
     ): ShipmentOrderRequestBuilderInterface;
 
@@ -157,13 +157,13 @@ interface ShipmentOrderRequestBuilderInterface
         string $city,
         string $streetName,
         string $streetNumber = '',
-        string $name = null,
-        string $nameAddition = null,
-        string $email = null,
-        string $phone = null,
-        string $contactPerson = null,
-        string $state = null,
-        string $dispatchingInformation = null,
+        ?string $name = null,
+        ?string $nameAddition = null,
+        ?string $email = null,
+        ?string $phone = null,
+        ?string $contactPerson = null,
+        ?string $state = null,
+        ?string $dispatchingInformation = null,
         array $addressAddition = []
     ): ShipmentOrderRequestBuilderInterface;
 
@@ -193,13 +193,13 @@ interface ShipmentOrderRequestBuilderInterface
         string $city,
         string $streetName,
         string $streetNumber = '',
-        string $company = null,
-        string $nameAddition = null,
-        string $email = null,
-        string $phone = null,
-        string $contactPerson = null,
-        string $state = null,
-        string $dispatchingInformation = null,
+        ?string $company = null,
+        ?string $nameAddition = null,
+        ?string $email = null,
+        ?string $phone = null,
+        ?string $contactPerson = null,
+        ?string $state = null,
+        ?string $dispatchingInformation = null,
         array $addressAddition = []
     ): ShipmentOrderRequestBuilderInterface;
 
@@ -235,9 +235,9 @@ interface ShipmentOrderRequestBuilderInterface
     public function setShipmentDetails(
         string $productCode,
         \DateTimeInterface $shipmentDate,
-        string $shipmentReference = null,
-        string $returnReference = null,
-        string $costCentre = null
+        ?string $shipmentReference = null,
+        ?string $returnReference = null,
+        ?string $costCentre = null
     ): ShipmentOrderRequestBuilderInterface;
 
     /**
@@ -300,8 +300,8 @@ interface ShipmentOrderRequestBuilderInterface
         string $countryCode,
         string $postalCode,
         string $city,
-        string $state = null,
-        string $country = null
+        ?string $state = null,
+        ?string $country = null
     ): ShipmentOrderRequestBuilderInterface;
 
     /**
@@ -327,9 +327,9 @@ interface ShipmentOrderRequestBuilderInterface
         string $countryCode,
         string $postalCode,
         string $city,
-        string $postNumber = null,
-        string $state = null,
-        string $country = null
+        ?string $postNumber = null,
+        ?string $state = null,
+        ?string $country = null
     ): ShipmentOrderRequestBuilderInterface;
 
     /**
@@ -527,7 +527,7 @@ interface ShipmentOrderRequestBuilderInterface
      * @param string|null $email If not set, receiver email will be used.
      * @return ShipmentOrderRequestBuilderInterface
      */
-    public function setParcelOutletRouting(string $email = null): ShipmentOrderRequestBuilderInterface;
+    public function setParcelOutletRouting(?string $email = null): ShipmentOrderRequestBuilderInterface;
 
     /**
      * Book the "Postal Delivery Duty Paid" (PDDP) service.
@@ -576,14 +576,14 @@ interface ShipmentOrderRequestBuilderInterface
         string $exportType,
         string $placeOfCommital,
         float $additionalFee,
-        string $exportTypeDescription = null,
-        string $termsOfTrade = null,
-        string $invoiceNumber = null,
-        string $permitNumber = null,
-        string $attestationNumber = null,
-        bool $electronicExportNotification = null,
-        string $sendersCustomsReference = null,
-        string $addresseesCustomsReference = null
+        ?string $exportTypeDescription = null,
+        ?string $termsOfTrade = null,
+        ?string $invoiceNumber = null,
+        ?string $permitNumber = null,
+        ?string $attestationNumber = null,
+        ?bool $electronicExportNotification = null,
+        ?string $sendersCustomsReference = null,
+        ?string $addresseesCustomsReference = null
     ): ShipmentOrderRequestBuilderInterface;
 
     /**

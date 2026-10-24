@@ -43,7 +43,7 @@ interface ShipmentServiceInterface
      * @throws DetailedServiceException
      * @throws ServiceException
      */
-    public function validateShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array;
+    public function validateShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array;
 
     /**
      * CreateShipmentOrder is the operation call used to generate shipments with the relevant DHL Paket labels.
@@ -57,7 +57,7 @@ interface ShipmentServiceInterface
      * @throws DetailedServiceException
      * @throws ServiceException
      */
-    public function createShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array;
+    public function createShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array;
 
     /**
      * DeleteShipmentOrder is the operation call used to cancel created shipments.

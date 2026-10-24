@@ -35,7 +35,7 @@ class ShipperTypeType
      * @param CommunicationType|null $Communication
      * @return ShipperTypeType
      */
-    public function setCommunication(CommunicationType $Communication = null): self
+    public function setCommunication(?CommunicationType $Communication = null): self
     {
         $this->Communication = $Communication;
         return $this;

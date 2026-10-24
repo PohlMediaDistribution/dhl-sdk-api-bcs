@@ -88,7 +88,7 @@ class NativeAddressType
      * @param string|null $dispatchingInformation
      * @return NativeAddressType
      */
-    public function setDispatchingInformation(string $dispatchingInformation = null): self
+    public function setDispatchingInformation(?string $dispatchingInformation = null): self
     {
         $this->dispatchingInformation = $dispatchingInformation;
         return $this;
@@ -98,7 +98,7 @@ class NativeAddressType
      * @param string|null $province
      * @return NativeAddressType
      */
-    public function setProvince(string $province = null): self
+    public function setProvince(?string $province = null): self
     {
         $this->province = $province;
         return $this;
@@ -108,7 +108,7 @@ class NativeAddressType
      * @param CountryType|null $Origin
      * @return NativeAddressType
      */
-    public function setOrigin(CountryType $Origin = null): self
+    public function setOrigin(?CountryType $Origin = null): self
     {
         $this->Origin = $Origin;
         return $this;

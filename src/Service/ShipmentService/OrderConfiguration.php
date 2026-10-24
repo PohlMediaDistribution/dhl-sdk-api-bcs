@@ -43,12 +43,12 @@ class OrderConfiguration implements OrderConfigurationInterface
     private $profile;
 
     public function __construct(
-        bool $mustEncode = null,
-        bool $combinedPrinting = null,
-        string $docFormat = null,
-        string $printFormat = null,
-        string $printFormatReturn = null,
-        string $profile = null
+        ?bool $mustEncode = null,
+        ?bool $combinedPrinting = null,
+        ?string $docFormat = null,
+        ?string $printFormat = null,
+        ?string $printFormatReturn = null,
+        ?string $profile = null
     ) {
         $this->mustEncode = $mustEncode;
         $this->combinedPrinting = $combinedPrinting;

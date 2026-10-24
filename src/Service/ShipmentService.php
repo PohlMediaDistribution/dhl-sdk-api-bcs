@@ -82,7 +82,7 @@ class ShipmentService implements ShipmentServiceInterface
         }
     }
 
-    public function validateShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array
+    public function validateShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array
     {
         try {
             $version = new Version('3', '3');
@@ -109,7 +109,7 @@ class ShipmentService implements ShipmentServiceInterface
         }
     }
 
-    public function createShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array
+    public function createShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array
     {
         try {
             $version = new Version('3', '3');

@@ -116,7 +116,7 @@ class ExportDocumentType
      * @param string|null $exportTypeDescription
      * @return ExportDocumentType
      */
-    public function setExportTypeDescription(string $exportTypeDescription = null): self
+    public function setExportTypeDescription(?string $exportTypeDescription = null): self
     {
         $this->exportTypeDescription = $exportTypeDescription;
         return $this;
@@ -126,7 +126,7 @@ class ExportDocumentType
      * @param string|null $invoiceNumber
      * @return ExportDocumentType
      */
-    public function setInvoiceNumber(string $invoiceNumber = null): self
+    public function setInvoiceNumber(?string $invoiceNumber = null): self
     {
         $this->invoiceNumber = $invoiceNumber;
         return $this;
@@ -136,7 +136,7 @@ class ExportDocumentType
      * @param string|null $termsOfTrade
      * @return ExportDocumentType
      */
-    public function setTermsOfTrade(string $termsOfTrade = null): self
+    public function setTermsOfTrade(?string $termsOfTrade = null): self
     {
         $this->termsOfTrade = $termsOfTrade;
         return $this;
@@ -146,7 +146,7 @@ class ExportDocumentType
      * @param string|null $permitNumber
      * @return ExportDocumentType
      */
-    public function setPermitNumber(string $permitNumber = null): self
+    public function setPermitNumber(?string $permitNumber = null): self
     {
         $this->permitNumber = $permitNumber;
         return $this;
@@ -156,7 +156,7 @@ class ExportDocumentType
      * @param string|null $attestationNumber
      * @return ExportDocumentType
      */
-    public function setAttestationNumber(string $attestationNumber = null): self
+    public function setAttestationNumber(?string $attestationNumber = null): self
     {
         $this->attestationNumber = $attestationNumber;
         return $this;
@@ -166,7 +166,7 @@ class ExportDocumentType
      * @param string|null $addresseesCustomsReference
      * @return ExportDocumentType
      */
-    public function setAddresseesCustomsReference(string $addresseesCustomsReference = null): self
+    public function setAddresseesCustomsReference(?string $addresseesCustomsReference = null): self
     {
         $this->addresseesCustomsReference = $addresseesCustomsReference;
         return $this;
@@ -176,7 +176,7 @@ class ExportDocumentType
      * @param string|null $sendersCustomsReference
      * @return ExportDocumentType
      */
-    public function setSendersCustomsReference(string $sendersCustomsReference = null): self
+    public function setSendersCustomsReference(?string $sendersCustomsReference = null): self
     {
         $this->sendersCustomsReference = $sendersCustomsReference;
         return $this;
@@ -186,7 +186,7 @@ class ExportDocumentType
      * @param ServiceConfiguration|null $withElectronicExportNtfctn
      * @return ExportDocumentType
      */
-    public function setWithElectronicExportNtfctn(ServiceConfiguration $withElectronicExportNtfctn = null): self
+    public function setWithElectronicExportNtfctn(?ServiceConfiguration $withElectronicExportNtfctn = null): self
     {
         $this->WithElectronicExportNtfctn = $withElectronicExportNtfctn;
         return $this;

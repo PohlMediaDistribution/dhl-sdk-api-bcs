@@ -174,7 +174,7 @@ class ShipmentService
      * @param ServiceConfigurationDateOfDelivery|null $dayOfDelivery
      * @return ShipmentService
      */
-    public function setDayOfDelivery(ServiceConfigurationDateOfDelivery $dayOfDelivery = null): self
+    public function setDayOfDelivery(?ServiceConfigurationDateOfDelivery $dayOfDelivery = null): self
     {
         $this->DayOfDelivery = $dayOfDelivery;
         return $this;
@@ -184,7 +184,7 @@ class ShipmentService
      * @param ServiceConfigurationDeliveryTimeFrame|null $deliveryTimeframe
      * @return ShipmentService
      */
-    public function setDeliveryTimeframe(ServiceConfigurationDeliveryTimeFrame $deliveryTimeframe = null): self
+    public function setDeliveryTimeframe(?ServiceConfigurationDeliveryTimeFrame $deliveryTimeframe = null): self
     {
         $this->DeliveryTimeframe = $deliveryTimeframe;
         return $this;
@@ -194,7 +194,7 @@ class ShipmentService
      * @param ServiceConfigurationISR|null $individualSenderRequirement
      * @return ShipmentService
      */
-    public function setIndividualSenderRequirement(ServiceConfigurationISR $individualSenderRequirement = null): self
+    public function setIndividualSenderRequirement(?ServiceConfigurationISR $individualSenderRequirement = null): self
     {
         $this->IndividualSenderRequirement = $individualSenderRequirement;
         return $this;
@@ -204,7 +204,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $packagingReturn
      * @return ShipmentService
      */
-    public function setPackagingReturn(ServiceConfiguration $packagingReturn = null): self
+    public function setPackagingReturn(?ServiceConfiguration $packagingReturn = null): self
     {
         $this->PackagingReturn = $packagingReturn;
         return $this;
@@ -214,7 +214,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $returnImmediately
      * @return ShipmentService
      */
-    public function setReturnImmediately(ServiceConfiguration $returnImmediately = null): self
+    public function setReturnImmediately(?ServiceConfiguration $returnImmediately = null): self
     {
         $this->ReturnImmediately = $returnImmediately;
         return $this;
@@ -224,7 +224,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $noticeOfNonDeliverability
      * @return ShipmentService
      */
-    public function setNoticeOfNonDeliverability(ServiceConfiguration $noticeOfNonDeliverability = null): self
+    public function setNoticeOfNonDeliverability(?ServiceConfiguration $noticeOfNonDeliverability = null): self
     {
         $this->NoticeOfNonDeliverability = $noticeOfNonDeliverability;
         return $this;
@@ -234,7 +234,7 @@ class ShipmentService
      * @param ServiceConfigurationEndorsement|null $endorsement
      * @return ShipmentService
      */
-    public function setEndorsement(ServiceConfigurationEndorsement $endorsement = null): self
+    public function setEndorsement(?ServiceConfigurationEndorsement $endorsement = null): self
     {
         $this->Endorsement = $endorsement;
         return $this;
@@ -244,7 +244,7 @@ class ShipmentService
      * @param ServiceConfigurationVisualAgeCheck|null $visualCheckOfAge
      * @return ShipmentService
      */
-    public function setVisualCheckOfAge(ServiceConfigurationVisualAgeCheck $visualCheckOfAge = null): self
+    public function setVisualCheckOfAge(?ServiceConfigurationVisualAgeCheck $visualCheckOfAge = null): self
     {
         $this->VisualCheckOfAge = $visualCheckOfAge;
         return $this;
@@ -254,7 +254,7 @@ class ShipmentService
      * @param ServiceConfigurationDetails|null $preferredLocation
      * @return ShipmentService
      */
-    public function setPreferredLocation(ServiceConfigurationDetails $preferredLocation = null): self
+    public function setPreferredLocation(?ServiceConfigurationDetails $preferredLocation = null): self
     {
         $this->PreferredLocation = $preferredLocation;
         return $this;
@@ -264,7 +264,7 @@ class ShipmentService
      * @param ServiceConfigurationDetails|null $preferredNeighbour
      * @return ShipmentService
      */
-    public function setPreferredNeighbour(ServiceConfigurationDetails $preferredNeighbour = null): self
+    public function setPreferredNeighbour(?ServiceConfigurationDetails $preferredNeighbour = null): self
     {
         $this->PreferredNeighbour = $preferredNeighbour;
         return $this;
@@ -274,7 +274,7 @@ class ShipmentService
      * @param ServiceConfigurationDetails|null $preferredDay
      * @return ShipmentService
      */
-    public function setPreferredDay(ServiceConfigurationDetails $preferredDay = null): self
+    public function setPreferredDay(?ServiceConfigurationDetails $preferredDay = null): self
     {
         $this->PreferredDay = $preferredDay;
         return $this;
@@ -284,7 +284,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $noNeighbourDelivery
      * @return ShipmentService
      */
-    public function setNoNeighbourDelivery(ServiceConfiguration $noNeighbourDelivery = null): self
+    public function setNoNeighbourDelivery(?ServiceConfiguration $noNeighbourDelivery = null): self
     {
         $this->NoNeighbourDelivery = $noNeighbourDelivery;
         return $this;
@@ -294,7 +294,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $namedPersonOnly
      * @return ShipmentService
      */
-    public function setNamedPersonOnly(ServiceConfiguration $namedPersonOnly = null): self
+    public function setNamedPersonOnly(?ServiceConfiguration $namedPersonOnly = null): self
     {
         $this->NamedPersonOnly = $namedPersonOnly;
         return $this;
@@ -304,7 +304,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $returnReceipt
      * @return ShipmentService
      */
-    public function setReturnReceipt(ServiceConfiguration $returnReceipt = null): self
+    public function setReturnReceipt(?ServiceConfiguration $returnReceipt = null): self
     {
         $this->ReturnReceipt = $returnReceipt;
         return $this;
@@ -314,7 +314,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $premium
      * @return ShipmentService
      */
-    public function setPremium(ServiceConfiguration $premium = null): self
+    public function setPremium(?ServiceConfiguration $premium = null): self
     {
         $this->Premium = $premium;
         return $this;
@@ -324,7 +324,7 @@ class ShipmentService
      * @param Economy|null $economy
      * @return ShipmentService
      */
-    public function setEconomy(Economy $economy = null): self
+    public function setEconomy(?Economy $economy = null): self
     {
         $this->Economy = $economy;
         return $this;
@@ -334,7 +334,7 @@ class ShipmentService
      * @param CDP|null $cdp
      * @return ShipmentService
      */
-    public function setCDP(CDP $cdp = null): self
+    public function setCDP(?CDP $cdp = null): self
     {
         $this->CDP = $cdp;
         return $this;
@@ -344,7 +344,7 @@ class ShipmentService
      * @param ServiceConfigurationCashOnDelivery|null $cashOnDelivery
      * @return ShipmentService
      */
-    public function setCashOnDelivery(ServiceConfigurationCashOnDelivery $cashOnDelivery = null): self
+    public function setCashOnDelivery(?ServiceConfigurationCashOnDelivery $cashOnDelivery = null): self
     {
         $this->CashOnDelivery = $cashOnDelivery;
         return $this;
@@ -354,7 +354,7 @@ class ShipmentService
      * @param ServiceConfigurationAdditionalInsurance|null $additionalInsurance
      * @return ShipmentService
      */
-    public function setAdditionalInsurance(ServiceConfigurationAdditionalInsurance $additionalInsurance = null): self
+    public function setAdditionalInsurance(?ServiceConfigurationAdditionalInsurance $additionalInsurance = null): self
     {
         $this->AdditionalInsurance = $additionalInsurance;
         return $this;
@@ -364,7 +364,7 @@ class ShipmentService
      * @param ServiceConfiguration|null $bulkyGoods
      * @return ShipmentService
      */
-    public function setBulkyGoods(ServiceConfiguration $bulkyGoods = null): self
+    public function setBulkyGoods(?ServiceConfiguration $bulkyGoods = null): self
     {
         $this->BulkyGoods = $bulkyGoods;
         return $this;
@@ -374,7 +374,7 @@ class ShipmentService
      * @param ServiceConfigurationIC|null $identCheck
      * @return ShipmentService
      */
-    public function setIdentCheck(ServiceConfigurationIC $identCheck = null): self
+    public function setIdentCheck(?ServiceConfigurationIC $identCheck = null): self
     {
         $this->IdentCheck = $identCheck;
         return $this;
@@ -384,7 +384,7 @@ class ShipmentService
      * @param ServiceConfigurationDetailsOptional|null $parcelOutletRouting
      * @return ShipmentService
      */
-    public function setParcelOutletRouting(ServiceConfigurationDetailsOptional $parcelOutletRouting = null): self
+    public function setParcelOutletRouting(?ServiceConfigurationDetailsOptional $parcelOutletRouting = null): self
     {
         $this->ParcelOutletRouting = $parcelOutletRouting;
         return $this;

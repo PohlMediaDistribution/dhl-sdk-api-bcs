@@ -39,7 +39,7 @@ class CountryType
      * @param string|null $country
      * @return CountryType
      */
-    public function setCountry(string $country = null): self
+    public function setCountry(?string $country = null): self
     {
         $this->country = $country;
         return $this;
@@ -49,7 +49,7 @@ class CountryType
      * @param string|null $state
      * @return CountryType
      */
-    public function setState(string $state = null): self
+    public function setState(?string $state = null): self
     {
         $this->state = $state;
         return $this;

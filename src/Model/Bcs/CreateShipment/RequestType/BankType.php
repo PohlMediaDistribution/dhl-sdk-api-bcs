@@ -63,7 +63,7 @@ class BankType
      * @param string|null $accountOwner
      * @return BankType
      */
-    public function setAccountOwner(string $accountOwner = null): self
+    public function setAccountOwner(?string $accountOwner = null): self
     {
         $this->accountOwner = $accountOwner;
         return $this;
@@ -73,7 +73,7 @@ class BankType
      * @param string|null $bankName
      * @return BankType
      */
-    public function setBankName(string $bankName = null): self
+    public function setBankName(?string $bankName = null): self
     {
         $this->bankName = $bankName;
         return $this;
@@ -83,7 +83,7 @@ class BankType
      * @param string|null $iban
      * @return BankType
      */
-    public function setIban(string $iban = null): self
+    public function setIban(?string $iban = null): self
     {
         $this->iban = $iban;
         return $this;
@@ -93,7 +93,7 @@ class BankType
      * @param string|null $note1
      * @return BankType
      */
-    public function setNote1(string $note1 = null): self
+    public function setNote1(?string $note1 = null): self
     {
         $this->note1 = $note1;
         return $this;
@@ -103,7 +103,7 @@ class BankType
      * @param string|null $note2
      * @return BankType
      */
-    public function setNote2(string $note2 = null): self
+    public function setNote2(?string $note2 = null): self
     {
         $this->note2 = $note2;
         return $this;
@@ -113,7 +113,7 @@ class BankType
      * @param string|null $bic
      * @return BankType
      */
-    public function setBic(string $bic = null): self
+    public function setBic(?string $bic = null): self
     {
         $this->bic = $bic;
         return $this;
@@ -123,7 +123,7 @@ class BankType
      * @param string|null $accountReference
      * @return BankType
      */
-    public function setAccountReference(string $accountReference = null): self
+    public function setAccountReference(?string $accountReference = null): self
     {
         $this->accountreference = $accountReference;
         return $this;

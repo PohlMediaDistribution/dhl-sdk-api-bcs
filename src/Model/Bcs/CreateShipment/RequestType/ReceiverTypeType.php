@@ -52,7 +52,7 @@ class ReceiverTypeType
      */
     public function __construct(
         string $name1,
-        ReceiverNativeAddressType $address = null
+        ?ReceiverNativeAddressType $address = null
     ) {
         $this->name1 = $name1;
         $this->Address = $address;
@@ -62,7 +62,7 @@ class ReceiverTypeType
      * @param ReceiverNativeAddressType|null $address
      * @return ReceiverTypeType
      */
-    public function setAddress(ReceiverNativeAddressType $address = null): self
+    public function setAddress(?ReceiverNativeAddressType $address = null): self
     {
         $this->Address = $address;
         return $this;
@@ -72,7 +72,7 @@ class ReceiverTypeType
      * @param PackStationType|null $packstation
      * @return ReceiverTypeType
      */
-    public function setPackstation(PackStationType $packstation = null): self
+    public function setPackstation(?PackStationType $packstation = null): self
     {
         $this->Packstation = $packstation;
         return $this;
@@ -82,7 +82,7 @@ class ReceiverTypeType
      * @param PostfilialeType|null $postfiliale
      * @return ReceiverTypeType
      */
-    public function setPostfiliale(PostfilialeType $postfiliale = null): self
+    public function setPostfiliale(?PostfilialeType $postfiliale = null): self
     {
         $this->Postfiliale = $postfiliale;
         return $this;
@@ -92,7 +92,7 @@ class ReceiverTypeType
      * @param CommunicationType|null $communication
      * @return ReceiverTypeType
      */
-    public function setCommunication(CommunicationType $communication = null): self
+    public function setCommunication(?CommunicationType $communication = null): self
     {
         $this->Communication = $communication;
         return $this;

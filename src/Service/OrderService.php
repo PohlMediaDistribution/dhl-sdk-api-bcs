@@ -154,7 +154,7 @@ class OrderService implements ShipmentServiceInterface
         }
     }
 
-    public function validateShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array
+    public function validateShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array
     {
         if (!$configuration instanceof OrderConfigurationInterface) {
             $configuration = new OrderConfiguration();
@@ -186,7 +186,7 @@ class OrderService implements ShipmentServiceInterface
         }
     }
 
-    public function createShipments(array $shipmentOrders, OrderConfigurationInterface $configuration = null): array
+    public function createShipments(array $shipmentOrders, ?OrderConfigurationInterface $configuration = null): array
     {
         if (!$configuration instanceof OrderConfigurationInterface) {
             $configuration = new OrderConfiguration();

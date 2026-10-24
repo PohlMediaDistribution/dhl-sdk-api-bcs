@@ -92,7 +92,7 @@ class ReceiverNativeAddressType
      * @param string|null $name2
      * @return ReceiverNativeAddressType
      */
-    public function setName2(string $name2 = null): self
+    public function setName2(?string $name2 = null): self
     {
         $this->name2 = $name2;
         return $this;
@@ -102,7 +102,7 @@ class ReceiverNativeAddressType
      * @param string|null $name3
      * @return ReceiverNativeAddressType
      */
-    public function setName3(string $name3 = null): self
+    public function setName3(?string $name3 = null): self
     {
         $this->name3 = $name3;
         return $this;
@@ -122,7 +122,7 @@ class ReceiverNativeAddressType
      * @param string|null $dispatchingInformation
      * @return ReceiverNativeAddressType
      */
-    public function setDispatchingInformation(string $dispatchingInformation = null): self
+    public function setDispatchingInformation(?string $dispatchingInformation = null): self
     {
         $this->dispatchingInformation = $dispatchingInformation;
         return $this;
@@ -132,7 +132,7 @@ class ReceiverNativeAddressType
      * @param string|null $province
      * @return ReceiverNativeAddressType
      */
-    public function setProvince(string $province = null): self
+    public function setProvince(?string $province = null): self
     {
         $this->province = $province;
         return $this;
@@ -142,7 +142,7 @@ class ReceiverNativeAddressType
      * @param CountryType|null $origin
      * @return ReceiverNativeAddressType
      */
-    public function setOrigin(CountryType $origin = null): self
+    public function setOrigin(?CountryType $origin = null): self
     {
         $this->Origin = $origin;
         return $this;

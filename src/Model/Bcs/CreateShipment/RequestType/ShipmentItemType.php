@@ -50,7 +50,7 @@ class ShipmentItemType
      * @param int|null $lengthInCM
      * @return ShipmentItemType
      */
-    public function setLengthInCM(int $lengthInCM = null): self
+    public function setLengthInCM(?int $lengthInCM = null): self
     {
         $this->lengthInCM = $lengthInCM;
         return $this;
@@ -60,7 +60,7 @@ class ShipmentItemType
      * @param int|null $widthInCM
      * @return ShipmentItemType
      */
-    public function setWidthInCM(int $widthInCM = null): self
+    public function setWidthInCM(?int $widthInCM = null): self
     {
         $this->widthInCM = $widthInCM;
         return $this;
@@ -70,7 +70,7 @@ class ShipmentItemType
      * @param int|null $heightInCM
      * @return ShipmentItemType
      */
-    public function setHeightInCM(int $heightInCM = null): self
+    public function setHeightInCM(?int $heightInCM = null): self
     {
         $this->heightInCM = $heightInCM;
         return $this;

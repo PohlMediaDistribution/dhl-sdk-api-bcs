@@ -43,7 +43,7 @@ class ShipmentOrderType
      * @param ServiceConfiguration|null $printOnlyIfCodeable
      * @return ShipmentOrderType
      */
-    public function setPrintOnlyIfCodeable(ServiceConfiguration $printOnlyIfCodeable = null): self
+    public function setPrintOnlyIfCodeable(?ServiceConfiguration $printOnlyIfCodeable = null): self
     {
         $this->PrintOnlyIfCodeable = $printOnlyIfCodeable;
         return $this;
